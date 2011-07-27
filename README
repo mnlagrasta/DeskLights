@@ -1,0 +1,41 @@
+DeskLights project
+
+What:
+ThingM's BlinkM lights activated by Growl via a Node JS server.
+
+Why:
+I had been tossing around the idea of using some ThingM BlinkM lights to provide
+a visual notification for cases where audible notifications are not possible.
+This could be useful to deaf people or in cases where the environment is too loud,
+or must remain silent.
+
+By using multiple BlinkM lights, it would also be possible to give significance to
+color and position.
+
+Requirements:
+ * Working Growl install
+ * Working Node install - nodejs.org
+ * ThingM BlinkM light(s) and LinkM controller - thingM.com
+ * Node server from this sample code
+ * Growl plugin from this sample code
+
+How:
+ * Install Node JS according to tips at nodejs.org
+ * Install the linkm-tool script from ThingM (http://code.google.com/p/linkm/downloads/detail?name=linkm-tool-macosx.zip&can=2&q=)
+ * Install Growl according to instructions at growl.info
+ * Install the DeskLights Growl "style" by double clicking on it (http://growl.info/documentation/expanding-growl.php)
+ * Verify the correct linkm-tool path in DeskLights.js
+ * Start the DeskLights.js server "node DeskLights.js"
+ * Wait for Growl events or send commands using http (http://127.0.0.1:8124/lights?cmd=blue)
+
+Huh?:
+So yeah, this is pretty silly, but it was fun. It's been a good proof of concept,
+but it needs work. I would really like to see the following things happen:
+ * Figure out Node Serial and stop using linkm-tool
+ * write a real growl style in Cocoa to get more data out of notification
+ * maybe write a growl replacement now that AppleScript has access to local notifications
+
+Additional Resources:
+Thingm: thingm.com
+NodeJS: nodejs.org
+Growl: growl.info

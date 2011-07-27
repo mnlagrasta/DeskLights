@@ -1,0 +1,40 @@
+body {
+	color: darkblue;
+	margin: 0px 0px 0px 0px;
+	padding: 6px 6px 6px 6px;
+	border: medium solid black;
+	font-family: Skia, sans-serif;
+	min-height: 51px;
+	background-image: url(http://127.0.0.1:8124/growl);
+}
+
+#background {
+	background-color:#D0D0D0;
+}
+
+#icon {
+	float: left;
+	top: 10px;
+	left: 10px;
+	width: 32px;
+	height: 32px;
+	margin-right: 5px;
+}
+
+#icon img {
+	width: 32px;
+	height: 32px;
+}
+
+#title {
+	font-weight:bold;
+	font-size:medium;
+}
+
+#text {
+	font-size:small;
+}
+
+#emergency #text {
+	color: red;
+}
